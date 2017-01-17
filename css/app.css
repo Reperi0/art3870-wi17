@@ -4,20 +4,34 @@
 /* main body styles */
 /* footer styles */
 
-h1, h6 {font-family: cursive;}
+h1, h6 {font-family: ", "Book Antiqua}
 
+figcaption {text-align: center; color:#828C92; }
 
-header{}
-  header
-  h1 {color:DFDFDF; background-color: 579ACC ;}
-  nav {}
-  footer {}
+h6 {text-align: center; color: #828C92;}
 
 
 
 
-* {outline: 1px solid red;}
 
+header{color:#828C92;}
+  h1 {color:#828C92;}
+  nav {color:#828C92;}
+  footer {color:#828C92;}
+  body {background-color:#D3EFFF; }
+  h2 {color:#828C92;text-align:center;}
+/*left form within page */
+form {text-align: right;}
+label{text-align: right;}
+input{text-align: right;}
+
+    #nav ul {
+        display: inline-block;
+        list-style-type: none;
+         color:#E6E6E6;  }
+p { text-align: left; font-family: ;color:#828C92;}
+
+#579ACC
 /* header styles */
 
 /* main body styles */
