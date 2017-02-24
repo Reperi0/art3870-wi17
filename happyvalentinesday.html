@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Happy Valentine's Day!</title>
+    <style media="screen">
+    #doggo {
+    left-indent:-100%;
+    height:225px;
+    width:249px;
+    border:1px solid blue;
+    background: url("images/doggo.png") 0 0 no-repeat;}
+    #doggo:hover {
+      background: url("images/doggo.png")-739px 0 no-repeat; }
+    #doggo:active{
+      background: url("images/doggo.png") -249px 0 no-repeat;
+    }
+
+    #heart {
+      border: 1px solid blue;
+      height:200px;
+      width:200px;
+      background: url("images/heart2.png") 0 0 no-repeat;
+      animation: heart .8s steps(6) infinite;
+    }
+
+    @keyframes heart {
+      100% {background-position: -1200px;}
+
+    }
+    </style>
+  </head>
+  <body>
+    <h1 id="doggo">
+      Doggo
+    </h1>
+<h1 id="heart">
+  heart
+</h1>
+<h1 id="name">Happy Valentine Day</h1>
+
+  <script type="text/javascript">
+  var myUrL = window.location.search;
+  var queryString = myUrL.substring(1).split('=');
+  var name = queryString[1];
+  //console.log(name);
+  document.getElementById('name').innerHTML = "Happy Valentines Day, "+ name + "!";
+
+  </script>
+  </body>
+</html>
