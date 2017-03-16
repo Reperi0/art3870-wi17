@@ -1,0 +1,86 @@
+@charset "utf-8";
+body {width:9000px;
+      height:1500px;}
+
+/*
+building the background with css multiple background images
+*/
+body{
+  /*background-color: white;*/
+
+  background-image:  url("../images/yy.jpg"), url("../images/background.jpg");
+
+background-position: left;
+background-repeat:no-repeat;
+
+}
+list-style-type{
+
+}
+#canvas{
+  margin:0;
+  width:9000px;
+  height:1000px;
+  position:relative;
+}
+.yy {
+    position: absolute;
+    right:1600px; }
+/*start the wrapper*/
+/*wrapper {
+h1 {color:red;
+    /*border:1px solid green;
+    opacity:1;
+    position:absolute;
+    top:280px;
+    /*left:100px; this works for 300px
+    /*better version
+    left:50%;
+    margin-left:-50px;
+    width:100px;
+    z-index:100;
+    }*/
+
+/*.tint {/*background-color:black;
+       width:100%;
+       height:50px;
+       opacity:.5;
+       position:absolute;
+       z-index:10;
+       top:250px;
+       width:140px;
+       height:135px;
+       left:50%;
+       margin-left:-75px;
+       background-image:url("http://lostworldsfairs.com/atlantis/img/sign_electronics.png");
+       background-position: 5px -196px;
+       background-repeat:no-repeat;
+
+    }*/
+    .mountain {
+      width: 500px;
+      height: 56px;
+      margin: 2% auto;
+      background: url('../images/mountain2.png') 0 0 no-repeat;
+      animation: play .5s steps(5) no-repeat;
+      position:absolute;
+      left: 100px;
+      top:50px;
+    }
+
+    @keyframes play {
+        50% { background-position: -700px; }
+    }
+    .facts{
+    font-family: baskerville;
+    font-size:36px;
+    color:#ffffff;
+    position: absolute;
+    top: 150px;
+    right:16430px
+    }
+    #dragon {
+      top:600px;
+      left:400px;
+      position: fixed;
+    }

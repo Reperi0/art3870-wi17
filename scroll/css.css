@@ -1,0 +1,43 @@
+,;@charset "utf-8";
+/* CSS Document */
+
+body{
+
+
+ background-image: url("../images/background.jpg");
+ background-position: left;
+ background-repeat:no-repeat;
+
+}
+
+#canvas{
+  margin:0;
+  height:9000px;
+  width:100px;
+  position:relative;
+
+
+}
+
+
+.yy {
+    position: absolute;
+    right:1600px;
+
+}
+
+
+  #mountain {
+    width: 500px;
+    height: 56px;
+    margin: 2% auto;
+    background: url('../images/mountain2.png') 0 0 no-repeat;
+    animation: play .5s steps(5) no-repeat;
+    position:absolute;
+    left: 100px;
+    top:50px;
+  }
+
+  @keyframes play {
+      50% { background-position: -700px; }
+  }
