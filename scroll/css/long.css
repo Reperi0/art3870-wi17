@@ -80,7 +80,17 @@ h1 {color:red;
     right:16430px
     }
     #dragon {
-      top:600px;
-      left:400px;
+      top:450px;
+      right:500px;
+      position: fixed;
+    }
+    #tiger {
+      top:-1px;
+      left:1000px;
+      position: fixed;
+    }
+    #sbol {
+      top:450px;
+      left:500px;
       position: fixed;
     }

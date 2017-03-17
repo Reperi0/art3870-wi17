@@ -3,7 +3,8 @@
 
 body{
 
-
+  width:9000px;
+  height:1500px;
  background-image: url("../images/background.jpg");
  background-position: left;
  background-repeat:no-repeat;
@@ -19,7 +20,9 @@ body{
 
 }
 
-
+#dragon {
+  position: fixed;
+}
 .yy {
     position: absolute;
     right:1600px;

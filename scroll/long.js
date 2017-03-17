@@ -22,17 +22,26 @@ $("#headline").text("You scrolled " + fromTop
   $("#headline").css({"top" : fromTop * 1.4 + "px",
   "transform"
    });
-   $(".my_audio").trigger('load');
-function play_audio(task) {
-   if(task == 'play'){
-    $(".my_audio").trigger('play');
-                           }
-  if(task == 'stop'){
-    $(".my_audio").trigger('pause');
-    $(".my_audio").prop("currentTime",0);
-                           }
-                      }
-});//end of scroll
+   var windw = this;
+
+   // jQuery
+      // Stop the fixed heading from scrolling over the footer
+      $.fn.followTo = function (pos) {
+        var $this = this,
+        $window = $(window);
+
+        $window.scroll(function (e) {
+          if ($window.scrollTop() > pos) {
+            $this.css( { position: 'absolute', bottom: '-180px' } );
+          } else {
+            $this.css( { position: 'fixed', bottom: '0' } );
+          }
+        });
+      };
+      // This behaviour is only needed for wide view ports
+      if ( $('#dragon').css("position") === "absolute" ) {
+        $('#dragon').followTo(180);
+      }
 
 
 
